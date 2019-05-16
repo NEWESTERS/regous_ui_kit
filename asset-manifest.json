@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/regous_ui_kit/static/css/main.5c01aaf5.chunk.css",
+    "main.css": "/regous_ui_kit/static/css/main.dc8e2b31.chunk.css",
     "main.js": "/regous_ui_kit/static/js/main.59f74e8f.chunk.js",
     "main.js.map": "/regous_ui_kit/static/js/main.59f74e8f.chunk.js.map",
     "runtime~main.js": "/regous_ui_kit/static/js/runtime~main.efc0d6b2.js",
@@ -8,9 +8,9 @@
     "static/js/2.a62319da.chunk.js": "/regous_ui_kit/static/js/2.a62319da.chunk.js",
     "static/js/2.a62319da.chunk.js.map": "/regous_ui_kit/static/js/2.a62319da.chunk.js.map",
     "index.html": "/regous_ui_kit/index.html",
-    "precache-manifest.f41915e6bb6d8073f94340005d09f1d8.js": "/regous_ui_kit/precache-manifest.f41915e6bb6d8073f94340005d09f1d8.js",
+    "precache-manifest.e1fa590bed0cf8f50abd10a45df19709.js": "/regous_ui_kit/precache-manifest.e1fa590bed0cf8f50abd10a45df19709.js",
     "service-worker.js": "/regous_ui_kit/service-worker.js",
-    "static/css/main.5c01aaf5.chunk.css.map": "/regous_ui_kit/static/css/main.5c01aaf5.chunk.css.map",
+    "static/css/main.dc8e2b31.chunk.css.map": "/regous_ui_kit/static/css/main.dc8e2b31.chunk.css.map",
     "static/media/index.css": "/regous_ui_kit/static/media/close.055a94ca.svg"
   }
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/regous_ui_kit/precache-manifest.f41915e6bb6d8073f94340005d09f1d8.js"
+  "/regous_ui_kit/precache-manifest.e1fa590bed0cf8f50abd10a45df19709.js"
 );
 
 self.addEventListener('message', (event) => {
