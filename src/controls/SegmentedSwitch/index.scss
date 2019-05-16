@@ -1,0 +1,47 @@
+@import '../../vars';
+
+.segmented-switch {
+    padding: 0 10px;
+    margin: 0px 0 10px 0;
+
+    @media ($mobile-media) {
+        width: 100%;
+        padding: 0;
+    }
+
+    label.segments-label {
+        @include font-bold(1em);
+        padding-left: 8px;
+    }
+    
+    .segments-container {
+        height: 30px;
+        @include input-border;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .segment {
+            padding: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            @include font-regular(1em);
+            color: $black-color;
+            background-color: white;
+            transition: all .3s ease;
+
+            &.active {
+                background-color: $secondary-color;
+                color: white;
+            }
+
+            &:not(:last-child) {
+                border-right: solid 2px $secondary-color;
+            }
+        }
+    }
+}

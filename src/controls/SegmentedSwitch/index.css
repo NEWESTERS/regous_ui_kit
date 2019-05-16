@@ -1,0 +1,40 @@
+.segmented-switch {
+  padding: 0 10px;
+  margin: 0px 0 10px 0; }
+  @media (max-width: 480px) {
+    .segmented-switch {
+      width: 100%;
+      padding: 0; } }
+  .segmented-switch label.segments-label {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em !important;
+    padding-left: 8px; }
+  .segmented-switch .segments-container {
+    height: 30px;
+    border: solid 2px #515FF3;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+    .segmented-switch .segments-container .segment {
+      padding: 0 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1em;
+      color: #333333;
+      background-color: white;
+      transition: all .3s ease; }
+      .segmented-switch .segments-container .segment.active {
+        background-color: #515FF3;
+        color: white; }
+      .segmented-switch .segments-container .segment:not(:last-child) {
+        border-right: solid 2px #515FF3; }

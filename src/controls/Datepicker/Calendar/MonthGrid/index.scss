@@ -1,0 +1,58 @@
+@import '../../../../vars';
+
+.month {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .week {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &:first-child {
+            background-color: $secondary-color;
+            border-radius: $border-radius;
+        }
+
+        .weekday {
+            width: 35px;
+            height: 20px;
+            border: solid 2px rgba(0, 0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include font-bold(.7em);
+            color: white;
+        }
+
+        .day {
+            width: 25px;
+            height: 25px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 2px rgba(0, 0, 0, 0);
+            border-radius: 4px;
+            transition: border-color .3s ease;
+
+            &.weekend {
+                color: gray;
+            }
+
+            &:not(.placeholder) {                
+                &:hover {
+                    border-color: #515FF3;
+                }
+            }
+
+            &.selected {
+                background-color: $secondary-color;
+                color: white;
+            }
+        }
+    }
+}

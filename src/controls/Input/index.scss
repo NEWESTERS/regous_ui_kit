@@ -1,0 +1,55 @@
+@import '../../vars';
+
+.text-input {
+    position: relative;
+    height: 30px;
+    border-radius: $border-radius;
+    border: solid 2px #515FF3;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    margin: 20px 10px 10px 10px;
+    cursor: text;
+
+    @media($mobile-media) {
+        width: 100%;
+    }
+
+    &.invalid {
+        border-color: red;
+    }
+
+    &.focused {
+        @include input-shadow(1);
+    }
+
+    label {
+        position: absolute;
+        left: 8px;
+        bottom: 7px;
+        color: $placeholder-color;
+        @include font-regular(1em);
+        transition: all .2s ease;
+        cursor: text;
+        user-select: none;
+    }
+
+    &.focused, &.not-empty {
+        label {
+            bottom: 35px;
+            @include font-bold(1em);
+            color: $black-color;
+            cursor: default;
+        }
+    }
+
+    input {
+        width: calc(100% - 20px);
+        height: calc(100% - 10px);
+        @include font-regular(1em);
+        border: none;
+        outline: none;
+    }
+}

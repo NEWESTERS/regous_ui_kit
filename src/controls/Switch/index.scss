@@ -1,0 +1,42 @@
+@import '../../vars';
+
+.switch {
+    margin: 10px;
+    
+    input {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        width: 45px;
+        height: 25px;
+        border-radius: $border-radius;
+        border: $secondary-color solid 2px;
+        background-color: $background-color;
+        transition: all .3s ease;
+
+        .grip {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25px;
+            height: 25px;
+            border-radius: $border-radius;
+            background-color: white;
+            box-shadow: 2.5px 0 2.5px rgba(0, 0, 0, .25);
+            transition: all .3s ease;
+        }
+    }
+
+    &.active {
+        .container {
+            background-color: $secondary-color;
+
+            .grip {
+                left: 20px;
+                box-shadow: -2.5px 0 2.5px rgba(0, 0, 0, .25);
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.datepicker-input {
+  padding: 0 10px;
+  margin: 20px 0 10px 0; }
+  @media (max-width: 480px) {
+    .datepicker-input {
+      width: 100%;
+      padding: 0; } }
+  .datepicker-input .trigger-button {
+    position: relative;
+    height: 34px;
+    border: solid 2px #515FF3;
+    border-radius: 4px;
+    background-color: white;
+    font-weight: 600;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .3s ease;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em; }
+    @media (max-width: 480px) {
+      .datepicker-input .trigger-button {
+        width: 100%; } }
+    .datepicker-input .trigger-button label {
+      position: absolute;
+      left: 10px;
+      bottom: 7px;
+      color: grey;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1em;
+      transition: all .2s ease;
+      user-select: none; }
+    .datepicker-input .trigger-button.not-empty label {
+      bottom: 35px;
+      color: #333333;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1em !important; }
+    .datepicker-input .trigger-button input {
+      width: calc(100% - 10px);
+      height: calc(100% - 10px); }
+
+.datepicker-modal .close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  background: url(../../images/close.svg) no-repeat;
+  background-size: contain; }
+
+.datepicker-modal h2 {
+  margin: 10px;
+  text-align: center; }

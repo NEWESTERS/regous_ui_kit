@@ -1,0 +1,13 @@
+@import '../../vars';
+
+.alert-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    p {
+        @include font-bold(1em);
+    }
+}

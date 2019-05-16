@@ -1,0 +1,70 @@
+@import '../../vars';
+
+.datepicker-input {
+    padding: 0 10px;
+    margin: 20px 0 10px 0;
+
+    @media ($mobile-media) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .trigger-button {
+        position: relative;
+        height: 34px;
+        @include input-border;
+        background-color: white;
+        font-weight: 600;
+        width: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all .3s ease;
+        padding-left: 10px;
+        box-sizing: border-box;
+        @include font-regular(1em);
+
+        @media($mobile-media) {
+            width: 100%;
+        }
+
+        label {
+            position: absolute;
+            left: 10px;
+            bottom: 7px;
+            color: $placeholder-color;            
+            @include font-regular(1em);
+            transition: all .2s ease;
+            user-select: none;
+        }
+        
+        &.not-empty {
+            label {
+                bottom: 35px;
+                color: $black-color;
+                @include font-bold(1em);
+            }
+        }
+    
+        input {
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+        }
+    }
+}
+
+.datepicker-modal {
+    .close-button {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 20px;
+        height: 20px;
+        @include icon(url(../../images/close.svg));
+    }
+
+    h2 {
+        margin: 10px;
+        text-align: center;
+    }
+}

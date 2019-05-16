@@ -1,0 +1,53 @@
+@import '../../../vars';
+
+.calendar {
+    position: relative;
+    width: 300px;
+    
+    .month-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .month-selector {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .arrow {
+            width: 11px;
+            height: 11px;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                top: -2px;
+                left: 0;
+                position: absolute;
+                border-bottom: 1px solid black;
+                border-left: 1px solid black;
+            }
+
+            &.left::before {
+                transform: rotate(45deg);
+            }
+
+            &.right::before {
+                transform: rotate(-135deg);
+            }
+        }
+
+        .selected-month {
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            @include font-bold(1em);
+        }
+    }
+}

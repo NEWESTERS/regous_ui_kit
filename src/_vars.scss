@@ -1,0 +1,63 @@
+// Media queries
+$mobile-media: "max-width: 480px";
+$tablet-media: "min-width: 481px) and (max-width: 800px";
+$desktop-media: "min-width: 801px";
+
+// Properties
+$border-radius: 4px;
+
+// Colors
+$secondary-color: #515FF3;
+$background-color: #eeeeee;
+$placeholder-color: grey;
+$black-color: #333333;
+$green-color: #99F469;
+$error-color: red;
+
+// Plugins
+@mixin icon($url) {
+    background: $url no-repeat;
+    background-size: contain;
+}
+
+@mixin input-border {
+    border: solid 2px $secondary-color;
+    border-radius: $border-radius;
+}
+
+@mixin input-shadow($multiplier) {
+    box-shadow: 0 0 ($multiplier * 10px) rgba(0, 0, 0, ($multiplier * .2));
+}
+
+// Fonts
+@mixin font-family {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+@mixin font-regular($font-size) {
+    @include font-family;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $font-size;
+}
+
+@mixin font-medium($font-size) {
+    @include font-family;
+    font-weight: 500;
+    font-style: normal;
+    font-size: $font-size;
+}
+
+@mixin font-bold($font-size) {
+    @include font-family;    
+    font-weight: 700;
+    font-style: normal;
+    font-size: $font-size !important;
+}
+
+@mixin font-extra-bold($font-size) {
+    @include font-family;    
+    font-weight: 800;
+    font-style: normal;
+    font-size: $font-size;
+}
