@@ -93,4 +93,11 @@
     .dropdown.active .arrow::after {
       transform: translateY(3px) rotate(-135deg); }
     .dropdown.active .list {
-      display: flex; }
+      display: flex;
+      animation: yUpscale .3s ease forwards; }
+
+@keyframes yUpscale {
+  0% {
+    max-height: 0; }
+  100% {
+    max-height: 120px; } }

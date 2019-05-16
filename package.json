@@ -1,6 +1,7 @@
 {
   "name": "regous_ui_kit",
   "version": "0.1.0",
+  "homepage": "http://newesters.github.io/regous_ui_kit",
   "private": true,
   "dependencies": {
     "@types/jest": "24.0.13",
@@ -24,7 +25,9 @@
     "build": "npm run build-css && react-scripts build",
     "typecheck": "tsc -p tsconfig.json",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "@types/classnames": "^2.2.7"
+    "@types/classnames": "^2.2.7",
+    "gh-pages": "^2.0.1"
   }
 }
